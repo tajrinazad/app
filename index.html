@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FF Tools</title>
+
+    <!-- ✅ SEO Tags Start -->
+    <meta name="description" content="Math Guide – All Class Math Solutions>
+    <meta name=" keywords" content="math solver, math solution, math game">
+    <meta name="author" content="Alone boy">
+
+    <!-- Open Graph for Facebook -->
+    <meta property="og:title" content="Math Guide – All Class Math Solutions" />
+    <meta property="og:description" content="Easy math solutions for all classes from Class 6 to College in one app." />
+    <meta property="og:image" content="https://res.cloudinary.com/daseyqhav/image/upload/v1773433006/app_mx7hik.png" />
+    <meta property="og:url" content="https://cctvonline1.github.io/app/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Math Guide – All Class Math Solutions" />
+    <meta name="twitter:description"
+        content="Easy math solutions for all classes from Class 6 to College in one app." />
+    <meta name="twitter:image" content="https://res.cloudinary.com/daseyqhav/image/upload/v1773433006/app_mx7hik.png" />
+    <!-- ✅ SEO Tags End -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .app-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .app-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            margin-right: 15px;
+        }
+
+        .app-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .app-company {
+            font-size: 14px;
+            color: #bbb;
+        }
+
+        .meta-info {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        .install-button {
+            background-color: #1e88e5;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .install-button:hover {
+            background-color: #1565c0;
+        }
+
+        .section-title {
+            font-size: 18px;
+            margin: 20px 0 10px;
+        }
+
+        .about-text {
+            background-color: #1f1f1f;
+            padding: 15px;
+            border-radius: 8px;
+            min-height: 60px;
+            position: relative;
+        }
+
+        .fade {
+            position: absolute;
+            bottom: 10px;
+            /* নিচে একটু নেমেছে */
+            left: 0;
+            right: 0;
+            height: 40px;
+            background: linear-gradient(transparent, #1f1f1f);
+            pointer-events: none;
+            /* ক্লিক ব্লক করতেছে, তাই এইটা দিলাম */
+        }
+
+        .read-more {
+            color: #1e88e5;
+            cursor: pointer;
+            margin-top: 10px;
+            /* আগের থেকে একটু নিচে নেমেছে */
+            display: inline-block;
+        }
+
+        /* Screenshot section updated */
+        .screenshots {
+            white-space: nowrap;
+            overflow-x: auto;
+            padding-bottom: 10px;
+        }
+
+        .screenshots img {
+            height: 200px;
+            margin-right: 20px;
+            display: inline-block;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .screenshots img:last-child {
+            margin-right: 0;
+        }
+
+        /* Modal for image popup */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal img {
+            max-width: 90%;
+            max-height: 80%;
+            display: block;
+            margin: 5% auto;
+            border-radius: 10px;
+        }
+
+        .rating-section {
+            margin-top: 20px;
+        }
+
+        .average-rating {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .star-display {
+            font-size: 24px;
+            color: #ffcc00;
+            margin-bottom: 10px;
+        }
+
+        .review {
+            background-color: #1f1f1f;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .review-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .see-more {
+            text-align: center;
+            color: #1e88e5;
+            cursor: pointer;
+            margin: 20px 0;
+        }
+
+        .see-more:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="app-header">
+            <img src="https://res.cloudinary.com/daseyqhav/image/upload/v1773433006/app_mx7hik.png" alt="App Icon"
+                class="app-icon" />
+            <div>
+                <div class="app-title">Math Guide</div>
+                <div class="app-company">Developed by Alone boy</div>
+            </div>
+        </div>
+
+        <div class="meta-info">
+            <div>2 downloads</div>
+            <div>8.5 MB</div>
+        </div>
+
+        <a href="https://github.com/tajrinazad/app/raw/refs/heads/main/MathGuide.apk" download>
+            <button class="install-button">Download APK</button>
+        </a>
+
+        <div class="section-title">Screenshots</div>
+        <div class="screenshots">
+            <img src="https://res.cloudinary.com/daseyqhav/image/upload/v1773432874/14_qdwri5.jpg" alt="Screenshot 1"
+                onclick="openModal(this.src)" />
+            <img src="https://res.cloudinary.com/daseyqhav/image/upload/v1773432798/unnamed_xlcgbc.webp"
+                alt="Screenshot 2" onclick="openModal(this.src)" />
+            <img src="https://res.cloudinary.com/daseyqhav/image/upload/v1773432933/math-solver-n7a-screenshot_vqf5wo.avif"
+                alt="Screenshot 3" onclick="openModal(this.src)" />
+        </div>
+
+        <div class="section-title">About this app</div>
+        <div class="about-text" id="aboutText">
+            <div id="aboutShort">
+                <p><b>Math Guide</b> – All Class Math Solutions </p>
+                <p>Easy math solutions for all classes from Class 6 to College in one app.</p>
+            </div>
+            <div id="aboutFull" style="display: none">
+                <p><b>Math Guide</b> – All Class Math Solutions </p>
+                <p>Easy math solutions for all classes from Class 6 to College in one app.</p>
+
+                <p>
+
+                    Math Guide is an educational app designed to help students easily understand mathematics. In this
+                    app, you can find clear and simple solutions to math problems from Class 6 up to Higher Secondary
+                    and College level.<br><br>
+
+                    The app provides step-by-step solutions so that students can understand how each problem is solved.
+                    It is very helpful for practicing math, preparing for exams, and improving problem-solving skills.<br>
+
+                    <b>Features</b><br>
+
+                    📚 Math solutions for all classes<br>
+                    📖 Chapter-wise organized problems and answers<br>
+                    ✏️ Step-by-step explanations<br>
+                    🎓 Helpful for exam preparation<br>
+                    📱 Simple and user-friendly interface<br>
+
+                    <b> Can Use This App</b><br>
+
+                    ✔ School students<br>
+                    ✔ College students<br>
+                    ✔ Anyone who wants to practice and improve their math skills<br><br>
+
+                    With Math Guide, learning mathematics becomes easier and more organized. Students can quickly find
+                    solutions and understand difficult problems without confusion.
+
+
+
+                </p>
+                
+            </div>
+            <div class="fade" id="fadeEffect"></div>
+            <span class="read-more" onclick="toggleAbout()" id="readMore">See more</span>
+        </div>
+
+        <div class="section-title">Ratings & Reviews</div>
+        <div class="rating-section">
+            <div class="average-rating">4.5 ★</div>
+            <div class="star-display">★★★★★</div>
+            <div class="review">
+                <div class="star-display">★★★★★</div>
+                <div class="review-title">Arman Hossain</div>
+                <div class="review-message">This app is really helpful for students. The math solutions are clear and easy to understand. Highly recommended for school and college students.</div>
+            </div>
+            <div class="review">
+                <div class="star-display">★★★★★</div>
+                <div class="review-title">Ritu Akter</div>
+                <div class="review-message">Math Guide is one of the best apps for learning mathematics. The step-by-step solutions make difficult problems very easy.</div>
+            </div>
+            <div class="review">
+                <div class="star-display">★★★★★</div>
+                <div class="review-title">Mahfuz Rahman</div>
+                <div class="review-message">I love this app. It has solutions for many classes and the interface is very simple. Great app for studying math.</div>
+            </div>
+            <div class="review">
+                <div class="star-display">★★★★★</div>
+                <div class="review-title">Shila Khatun</div>
+                <div class="review-message">Very useful app for students who struggle with math. The explanations are clear and easy to follow. </div>
+            </div>
+            <div class="review">
+                <div class="star-display">★★★★☆</div>
+                <div class="review-title">Sajib Hasan</div>
+                <div class="review-message">This app helped me a lot with my math homework. The solutions are well organized and easy to find.</div>
+            </div>
+            <div class="review">
+                <div class="star-display">★★★★☆</div>
+                <div class="review-title">Nazifa Jahan</div>
+                <div class="review-message">Amazing app for learning mathematics. It saves a lot of time when solving difficult problems.</div>
+            </div>
+            <div class="review">
+                <div class="star-display">★★★★★</div>
+                <div class="review-title">Jannatul Nayeem</div>
+                <div class="review-message">A perfect app for students. The math solutions are simple and accurate. I highly recommend it.</div>
+            </div>
+            <div class="review">
+                <div class="star-display">★★★★★</div>
+                <div class="review-title">Farid Uddin</div>
+                <div class="review-message">Great educational app. It helps students understand math problems step by step.
+                </div>
+            </div>
+            <div class="review">
+                <div class="star-display">★★★★★</div>
+                <div class="review-title">Tarek Aziz</div>
+                <div class="review-message">Very helpful app for exam preparation. The math solutions are explained very clearly.
+                </div>
+            </div>
+            <div class="review">
+                <div class="star-display">★★★★★</div>
+                <div class="review-title">Nusrat Tamanna</div>
+                <div class="review-message">This is a fantastic math learning app. Every student should try this app.</div>
+            </div>
+
+            <div class="see-more">See all reviews</div>
+        </div>
+    </div>
+
+    <!-- Modal HTML -->
+    <div class="modal" id="modal" onclick="this.style.display='none'">
+        <img id="modalImage" src="" />
+    </div>
+
+    <script>
+        function toggleAbout() {
+            const shortText = document.getElementById("aboutShort");
+            const fullText = document.getElementById("aboutFull");
+            const readMore = document.getElementById("readMore");
+            const fade = document.getElementById("fadeEffect");
+
+            if (fullText.style.display === "none") {
+                fullText.style.display = "block";
+                shortText.style.display = "none";
+                readMore.textContent = "Show less";
+                fade.style.display = "none";
+            } else {
+                fullText.style.display = "none";
+                shortText.style.display = "block";
+                readMore.textContent = "See more";
+                fade.style.display = "block";
+            }
+        }
+
+        function openModal(src) {
+            document.getElementById("modalImage").src = src;
+            document.getElementById("modal").style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
